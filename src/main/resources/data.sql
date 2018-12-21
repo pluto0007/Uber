@@ -40,3 +40,24 @@ values
  (8,
  'aced0005737200226f72672e737072696e676672616d65776f726b2e646174612e67656f2e506f696e7431b9e90ef11a4006020002440001784400017978704023000000000000404bfa1cac083127', now(), now(), false, 'ONLINE',
 'driver08pw', 'driver08');
+
+insert into car(id, license_plate, seat_count, convertible, rating, engine_type, manufacturer, selected) values(1, 'DL9CAP1871', 4, true, 4,'GAS','audi',false);
+
+insert into car(id, license_plate, seat_count, convertible, rating, engine_type, manufacturer, selected) values(2, 'DL9CAP1872', 6, false, 1,'ELECTRIC','suzuki',false);
+
+insert into car(id, license_plate, seat_count, convertible, rating, engine_type, manufacturer, selected) values(3, 'DL9CAP1873', 6, true, 3,'GAS','audi',false);
+
+insert into car(id, license_plate, seat_count, convertible, rating, engine_type, manufacturer, selected) values(4, 'DL9CAP1874', 4, false, 5,'ELECTRIC','bmw',false);
+
+
+INSERT INTO role (id, description, name) VALUES (4, 'Admin role', 'ADMIN');
+INSERT INTO role (id, description, name) VALUES (5, 'User role', 'USER');
+
+INSERT INTO DRIVER_ROLES (DRIVER_ID, ROLE_ID) VALUES (1, 4);
+INSERT INTO DRIVER_ROLES (DRIVER_ID,ROLE_ID) VALUES (2, 5);
+INSERT INTO DRIVER_ROLES (DRIVER_ID,ROLE_ID) VALUES (3, 5);
+INSERT INTO DRIVER_ROLES (DRIVER_ID,ROLE_ID) VALUES (4, 5);
+INSERT INTO DRIVER_ROLES (DRIVER_ID,ROLE_ID) VALUES (5, 5);
+INSERT INTO DRIVER_ROLES (DRIVER_ID,ROLE_ID) VALUES (6, 5);
+INSERT INTO DRIVER_ROLES (DRIVER_ID,ROLE_ID) VALUES (7, 5);
+INSERT INTO DRIVER_ROLES (DRIVER_ID,ROLE_ID) VALUES (8, 5);

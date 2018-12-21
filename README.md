@@ -51,7 +51,9 @@ First come first serve: A car can be selected by exactly one ONLINE Driver. If a
 
 
 ## Task 3
-Imagine a driver management frontend that is used internally by mytaxi employees to create and edit driver related data. For a new search functionality, we need an endpoint to search for drivers. It should be possible to search for drivers by their attributes (username, online_status) as well as car characteristics (license plate, rating, etc).
+Imagine a driver management front end that is used internally by mytaxi employees to create and edit driver related data. 
+For a new search functionality, we need an endpoint to search for drivers. It should be possible to search for drivers 
+by their attributes (username, online_status) as well as car characteristics (license plate, rating, etc).
 
 * implement a new endpoint for searching or extend an existing one
 * driver/car attributes as input parameters
@@ -72,6 +74,13 @@ Please include instructions how to authenticate/login, so that we can test the e
 Good luck!
 ❤️ mytaxi
 
+## Instruction to test the authentication/login :
+* I have included postman collection for testing purpose, Please import it in postman.
+* Prior to any testing, make a call to http://localhost:8071/v1/auth with username and password. By design there is only one admin, 'driver01pw', 'driver01', 
+rest of them are just Users.
+* The above call will return a bearer token which will be passed along in every rest API call under Authorization header
+* I have implemented Json web token based authentication along with spring security for authorization purpose. 
+* Whenever a driver is created, I am assigning it User role.
 
 
 _NOTE: Please make sure to not submit any personal data with your tests result. Personal data is for example your name, your birth date, email address etc._
